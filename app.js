@@ -1,32 +1,32 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = 8000;
+const port = process.env.PORT || 8000; // Use dynamic port for deployment
 
-// app.use("view",express.static('.../frontend/static'));// For surving static files
-app.use("view",express.static('static'));// For surving static files
-app.use(express.urlencoded());
+// For serving static files
+app.use(express.static('static'));
 
-//PUG
-app.set('view engine','pug');//Set the template engine as pug
-app.path('views',path.join(__dirname,'views'));//set the views directory
+// To parse URL-encoded data from form submissions
+app.use(express.urlencoded({ extended: true }));
 
-//ENDPOINTS
-app.get('/',(req,res)=>{
-    const params={};
-    res.status(200).render('home.pug',params);
-});
-app.get('/contact',(req,res)=>{
-    const params={};
-    res.status(200).render('contact.pug',params);
-});
+// Set the template engine as Pug
+app.set('view engine', 'pug');
 
+// Set the views directory
+app.set('views', path.join(__dirname, 'views'));
 
-// start server
-app.listen(port,()=>{
-    console.log(`The application started successfully on port http://127.0.0.1:${port} `);
-
+// Endpoints
+app.get('/', (req, res) => {
+    const params = {};
+    res.status(200).render('home.pug', params);
 });
 
-// "dev":"nodemon app.js",
-// "build": "npm i",
+app.get('/contact', (req, res) => {
+    const params = {};
+    res.status(200).render('contact.pug', params);
+});
+
+// Start server
+app.listen(port, () => {
+    console.log(`The application started successfully on port http://127.0.0.1:${port}`);
+});
