@@ -61,7 +61,7 @@
     align-items:center;
     font-size: 2.5rem;
     font-family: 'Dancing Script', cursive;
-    background: url('/static/img/bg.jpg') center/cover no-repeat;
+    background: url('img/bg.jpg') center/cover no-repeat;
 }
 .small{
     margin: 5px;
