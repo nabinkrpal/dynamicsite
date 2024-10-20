@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = process.env.PORT; // Use dynamic port for deployment
+const port = process.env.PORT||8000; // Use dynamic port for deployment
 
 // For serving static files
 app.use(express.static('static'));
