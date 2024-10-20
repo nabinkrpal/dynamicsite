@@ -22,7 +22,7 @@ app.get('/contact',(req,res)=>{
 
 
 //start server
-app.listen(port,()=>{
-    console.log(`The application started successfully on port http://127.0.0.1:${port} `);
+// app.listen(port,()=>{
+//     console.log(`The application started successfully on port http://127.0.0.1:${port} `);
 
-});
+// });
