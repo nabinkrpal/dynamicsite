@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Dancing+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+
+
+}
+/*  */
+
+#logo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 5px 20px;
+    margin-right: 50px;
+}
+#logo img{
+    filter: invert();
+    height: 70px;
+}
+
+#navbar{
+    background-color: rgb(8, 12, 66);
+    padding: 15px;
+    font-family: 'Aboreto', cursive;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#navbar ul li{
+    list-style: none;
+    margin: 10px;
+    padding: 4px 18px;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#navbar ul li a:hover{
+    color: rgb(141, 135, 135);
+}
+
+/*  */
+#introsection{
+    height:550px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    padding-top:1.5em;
+    padding-bottom: 1.5em;
+    /* justify-content: center; */
+    align-items:center;
+    font-size: 2.5rem;
+    font-family: 'Dancing Script', cursive;
+    background: url('/static/img/bg.jpg') center/cover no-repeat;
+}
+.small{
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.8rem;
+}
+#missionsection{
+    height: 400px;
+    background-color: blueviolet;
+}
+#missionsection h3{
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    font-size: 2rem;
+    font-family:'Aboreto', cursive;
+}
+.con{
+    display: flex;
+}
+
+.card{
+    /* border:2px solid rgb(255, 255, 255); */
+    border-radius: 10px;
+    background-color: rgb(45, 5, 82);
+    width: 25%;
+    margin: 25px;
+    height: 300px;
+    text-align: center;
+    margin: 10px auto;
+}
+.card h2{
+    font-size: 1.5rem;
+    color: white;
+    padding: 10px;
+    margin: 10px auto;
+}
+.card-img{
+    height: 100px;
+}
+.card-img img{
+    height: 80px;
+    width:  auto;
+    filter: invert();
+}
+.card-content p{
+    color: white;
+    padding: 10px 30px;
+    font-size: 1.25rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+#sponsorsection{
+    height:300px;
+    background-color: rgb(142 255 191 / 49%); 
+    padding: 10px;  
+}
+
+#sponsorsection h3{
+    text-align: center;
+    font-size: 2rem;
+    font-family:'Aboreto', cursive;
+    /* margin-top: 10px; */
+    padding-top: 15px;
+}
+#sponsors{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    height: 200px;
+}
+#sponsors img{
+    height: 150px;
+    width: auto;
+    margin: 15px;
+    padding: 5px;
+}
+/*  */
+#footer{
+    height:auto;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    text-align: center;
+
+}

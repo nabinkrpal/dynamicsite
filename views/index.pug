@@ -1,0 +1,65 @@
+doctype html
+html 
+    head
+        title NabinDanceAcademy 
+        style   
+            include ../static/style.css 
+    body 
+        nav#navbar
+            ul  
+                div#logo 
+                    img(src="/static/img/logo.png")
+                    | NDA
+                //- li #[a(href="/") Home]
+                //- li #[a(href="/about") About]
+                //- li #[a(href="/services") Services]
+                //- li #[a(href="/classes") Class Info]
+                //- li #[a(href="/contact") Contact Us ]
+                li #[a(href="/") Home]
+                li #[a(href="/") About]
+                li #[a(href="/") Services]
+                li #[a(href="/") Class Info]
+                li #[a(href="/") Contact Us ]
+
+        section#introsection 
+            div
+                | Welcome to Nabin's Dance Academy 
+            div.small
+                | Eat Sleep Dance Repeat
+        section#missionsection 
+            h3 Our mission
+            div.con
+                div.card
+                    h2 Dance Perfection
+                    div.card-box
+                        div.card-img
+                            img(src="/static/img/1.png")
+                        div.card-content
+                            p This is the best dance academy in the place we exist
+
+                div.card
+                    h2 Dance the way you like
+                    div.card-box
+                        div.card-img
+                            img(src="/static/img/2.png")
+                        div.card-content
+                            p This is the best dance academy in the place we exist
+                div.card
+                    h2 Expert Teaching
+                    div.card-box
+                        div.card-img
+                            img(src="/static/img/3.png")
+                        div.card-content
+                            p This is the best dance academy in the place we exist
+        section#sponsorsection 
+            h3 Our sponsors
+            div#sponsors
+                img(src="/static/img/logo1.png", alt="sponsor image") 
+                img(src="/static/img/logo2.png", alt="sponsor image") 
+                img(src="/static/img/logo3.png", alt="sponsor image") 
+                img(src="/static/img/logo4.png", alt="sponsor image") 
+        footer#footer 
+            | Copright &copy; www.NabinDanceAcademny.com &nbsp; All rights reserved.
+
+        script 
+        include ../static/index.js
